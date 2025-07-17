@@ -488,7 +488,7 @@ $
 ```
 ## Bundle 3
 
-## Exercise 
+## Exercise 1
 
 ``` Bash
 
@@ -1083,5 +1083,95 @@ To https://github.com/docile-imbereyemaso/Gym-Git-Exercise-Solutions.git
    708b8f8..40c88ba  ft/team-page -> ft/team-page
 
 user@User MINGW64 ~/Desktop/The Gym-phase II/Git learning (ft/team-page)       
+$
+```
+
+## Bundle 3
+
+## Exercise 2
+
+```Bash 
+
+user@User MINGW64 ~/Desktop/The Gym-phase II/Git learning (ft/faq-page)
+$ git checkout -b ft/home-page-redesign
+Switched to a new branch 'ft/home-page-redesign'       
+
+user@User MINGW64 ~/Desktop/The Gym-phase II/Git learning (ft/home-page-redesign)
+$ git checkout main
+Switched to branch 'main'
+
+user@User MINGW64 ~/Desktop/The Gym-phase II/Git learning (main)
+$ git add service.html 
+
+user@User MINGW64 ~/Desktop/The Gym-phase II/Git learning (main)
+$ git commit -m "feat: update the content of home page"
+[main 9a8f51c] feat: update the content of home page
+ 1 file changed, 4 insertions(+)
+
+user@User MINGW64 ~/Desktop/The Gym-phase II/Git learning (main)
+$ git push origin main
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 401 bytes | 401.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/docile-imbereyemaso/Gym-Git-Exercise-Solutions.git
+   4bc8baf..9a8f51c  main -> main
+
+user@User MINGW64 ~/Desktop/The Gym-phase II/Git learning (main)
+$ git checkout ft/home-page-redesign
+Switched to branch 'ft/home-page-redesign'
+
+user@User MINGW64 ~/Desktop/The Gym-phase II/Git learning (ft/home-page-redesign)
+ft/bundle-2
+5af78d3 (origin/ft/bundle-2, ft/bundle-2) Adding the content to service page
+1f4b4e9 Merge pull request #2 from docile-imbereyemaso/ft/bundle-2
+08d432e Adding new page page service.html
+f1efa4e Add the commands of Bundle1 Exercise2 in readme file
+c56e566 Merge pull request #1 from docile-imbereyemaso/dev
+89654ef (origin/dev) Add the git commands  in Readme file
+c784115 Initial commit
+
+user@User MINGW64 ~/Desktop/The Gym-phase II/Git learning (ft/home-page-redesign)
+$ git rebase main
+Successfully rebased and updated refs/heads/ft/home-page-redesign.
+
+user@User MINGW64 ~/Desktop/The Gym-phase II/Git learning (ft/home-page-redesign)
+$ git commit -a -m "add the changes to the home page"
+On branch ft/home-page-redesign
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        Home.html
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+user@User MINGW64 ~/Desktop/The Gym-phase II/Git learning (ft/home-page-redesign)
+$ git add Home.html 
+
+user@User MINGW64 ~/Desktop/The Gym-phase II/Git learning (ft/home-page-redesign)
+$ git commit -m " add the changes to the home page"
+[ft/home-page-redesign 93e0a0c]  add the changes to the home page
+ 1 file changed, 11 insertions(+)
+ create mode 100644 Home.html
+
+user@User MINGW64 ~/Desktop/The Gym-phase II/Git learning (ft/home-page-redesign)
+$ git push origin ft/home-page-redesign 
+Enumerating objects: 12, done.
+Counting objects: 100% (12/12), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (11/11), done.
+Writing objects: 100% (11/11), 1.20 KiB | 1.20 MiB/s, done.
+Total 11 (delta 5), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (5/5), done.
+remote:
+remote: Create a pull request for 'ft/home-page-redesign' on GitHub by visiting:
+remote:      https://github.com/docile-imbereyemaso/Gym-Git-Exercise-Solutions/pull/new/ft/home-page-redesign
+remote:
+To https://github.com/docile-imbereyemaso/Gym-Git-Exercise-Solutions.git
+ * [new branch]      ft/home-page-redesign -> ft/home-page-redesign
+
+user@User MINGW64 ~/Desktop/The Gym-phase II/Git learning (ft/home-page-redesign)
 $
 ```
