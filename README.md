@@ -1175,3 +1175,58 @@ To https://github.com/docile-imbereyemaso/Gym-Git-Exercise-Solutions.git
 user@User MINGW64 ~/Desktop/The Gym-phase II/Git learning (ft/home-page-redesign)
 $
 ```
+
+## Bundle 4
+
+### Exercise 1
+
+``` Bash 
+
+user@User MINGW64 ~/Desktop/The Gym-phase II/Git learning (main)
+$ git remote add git-copy https://github.com/docile-imbereyemaso/git-exercise-clone.git
+
+user@User MINGW64 ~/Desktop/The Gym-phase II/Git learning (main)
+$ git status
+On branch main
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   home.html
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+user@User MINGW64 ~/Desktop/The Gym-phase II/Git learning (main)
+$ git add home.html 
+
+user@User MINGW64 ~/Desktop/The Gym-phase II/Git learning (main)
+$ git commit -m "feat : add the content to the home page"
+[main bc8a3d3] feat : add the content to the home page
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+user@User MINGW64 ~/Desktop/The Gym-phase II/Git learning (main)
+$ git push origin main
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 394 bytes | 394.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/docile-imbereyemaso/Gym-Git-Exercise-Solutions.git       
+   6a8c740..bc8a3d3  main -> main
+
+user@User MINGW64 ~/Desktop/The Gym-phase II/Git learning (main)
+$ git push git-copy main
+Enumerating objects: 42, done.
+Counting objects: 100% (42/42), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (38/38), done.
+Writing objects: 100% (42/42), 14.97 KiB | 1.15 MiB/s, done.
+Total 42 (delta 9), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (9/9), done.
+To https://github.com/docile-imbereyemaso/git-exercise-clone.git
+ * [new branch]      main -> main
+
+user@User MINGW64 ~/Desktop/The Gym-phase II/Git learning (main)
+$
+```
